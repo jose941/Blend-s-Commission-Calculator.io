@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blend's Commission Calculator</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 Blend's Commission Calculator</h2>
+
+    <!-- Disclaimer Section -->
+    <p class="disclaimer">
+      💬 <b>Disclaimer:</b> Prices shown are base estimates and may vary depending on complexity, character design, or extra details. 
+      This calculator is for quick quotes only; final prices are confirmed after discussion.
+    </p>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+      <button id="themeToggle">Dark Mode 🌙</button>
+    </div>
+
+    <!-- Base Deal Info -->
+    <div class="base" title="Every commission automatically includes 1 model and 2 angles for a base price of $10. Additional options increase the total.">
+      <span>Base Deal (1 Model + 2 Angles)</span>
+      <span>$10.00</span>
+    </div>
+
+    <!-- Add-on Inputs -->
+    <div id="items">
+      <div class="base1" title="How many characters do you want in the scene?">
+        <label for="extraCharacters">Extra Characters ($5 each):</label>
+        <input type="number" id="extraCharacters" value="0" min="0">
+      </div>
+
+      <div class="base1" title="Characters that show half of their bodies or less.">
+        <label for="halfCharacters">Half Characters ($2.5 each):</label>
+        <input type="number" id="halfCharacters" value="0" min="0">
+      </div>
+
+      <div class="base1" title="If you ask for edits on characters.">
+        <label for="editCharacters">Character Edits ($5 each):</label>
+        <input type="number" id="editCharacters" value="0" min="0">
+      </div>
+
+      <div class="base1" title="How many extra camera angles do you want?">
+        <label for="extraCamera">Extra Camera Angles ($1 each):</label>
+        <input type="number" id="extraCamera" value="0" min="0">
+      </div>
+
+      <div class="base1" title="How many fluid effects do you want?">
+        <label for="fluidCount">Fluid ($2 each):</label>
+        <input type="number" id="fluidCount" value="0" min="0">
+      </div>
+    </div>
+
+    <!-- Total Display -->
+    <div class="total">Total: $<span id="total">10.00</span></div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="./script.js"></script>
+</body>
+</html>
